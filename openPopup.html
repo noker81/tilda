@@ -1,0 +1,9 @@
+<script>
+if (window.location.hash !== "") {
+    document.addEventListener("DOMContentLoaded", function (event) {
+        setTimeout(function () {
+            document.querySelector("a[href='" + window.location.hash + "']").click();
+        }, 500);
+    });
+}
+</script>
